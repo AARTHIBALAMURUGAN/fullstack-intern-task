@@ -24,7 +24,7 @@ app.use("/api/favorite", favoriteRoutes);
 app.get("/", (req, res) => {
   res.send("Backend is running ");
 });
-const PORT = 5000;
-app.listen(PORT, () => {
+
+app.listen(process.env.PORT, () => {
   console.log("Server is running 5000");
 });
