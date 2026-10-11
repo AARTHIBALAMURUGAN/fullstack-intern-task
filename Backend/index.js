@@ -9,9 +9,7 @@ const cors=require('cors')
 const app = express();
 connectDB();
 
-app.use(cors({
-  origin:process.env.FRONTEND_URL|| "http://localhost:5173"
-}));
+app.use(cors());
 
 app.use(express.json());
 
