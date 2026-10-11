@@ -3,7 +3,7 @@ require("dotenv").config();
 const connectDB = require("./config/db");
 const userRoutes = require("./Route/userRoute");
 const templeteRoutes = require("./Route/templeteRoute");
-const favoriteRoutes = require("./Route/favoriteroute");
+const favoriteRoutes = require("./Route/favoriteRoute");
 
 const cors=require('cors')
 const app = express();
